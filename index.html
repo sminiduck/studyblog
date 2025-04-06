@@ -1,57 +1,87 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitHub Pages Blog</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study Memo</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- highlight.js (CDN 또는 직접 다운로드하여 사용 가능) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+  <!-- MathJax -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-    p {
-      font-size: 1.1em;
-      line-height: 1.6em;
-      color: #333;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 10px 0;
-    }
-  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>내 메모 블로그</h1>
-    <p>여기에 간단한 메모를 작성합니다. 예를 들어 수학 수식은 이렇게 입력할 수 있습니다: <span id="equation"></span></p>
-    <p>여기에 수학 수식 예시: \( E = mc^2 \)</p>
-    <img src="img/stress_strain_curve.png" alt="그래프 예시">
+  <div class="container" id="root">
+    <div class="memo-header">
+      <h1>STUDY MEMO</h1>
+      <p class="date">2025-04-06 작성</p>
+    </div>
+    <p>
+      이 블로그는 제가 공부한 과학과 공학 내용을 짧은 메모로 정리하는 공간입니다. <br />
+      하나의 메모에는 수식, 그림, 코드와 함께 3~6줄로 기록되며, 누구나 볼 수 있습니다.
+    </p>
   </div>
-  <div class="container">
-    <h1>내 메모 블로그</h1>
-    <p>여기에 간단한 메모를 작성합니다. 예를 들어 수학 수식은 이렇게 입력할 수 있습니다: <span id="equation"></span></p>
-    <p>여기에 수학 수식 예시: \( E = mc^2 \)</p>
-    <img src="img/stress_strain_curve.png" alt="다이어그램 예시">
+  
+  <div class="container" id="constant">
+    <div class="memo-header">
+      <h1>Constant</h1>
+      <p class="date">2025-04-06 작성</p>
+    </div>
+    <h2>물리</h2>
+    <p>
+      \[
+      \begin{aligned}
+        k_e              &= 8.988 \times 10^9 \; \mathrm{N \cdot m^2 / C^2} \\[1.5ex]
+        \varepsilon_0    &= 8.854 \times 10^{-12} \; \mathrm{F/m} \\[1.5ex]
+        e                &= 1.602 \times 10^{-19} \; \mathrm{C} \\[1.5ex]
+        h                &= 6.626 \times 10^{-34} \; \mathrm{J \cdot s} \\[1.5ex]
+        \hbar            &= 1.055 \times 10^{-34} \; \mathrm{J \cdot s} \\[1.5ex]
+        1 \, \mathrm{eV} &= 1.602 \times 10^{-19} \, \mathrm{J}
+      \end{aligned}
+      \]
+    </p>
   </div>
-  <script>
-    MathJax.Hub.Queue(["Typeset", MathJax.Hub, "equation"]);
-  </script>
+
+  <div class="container" id="constant">
+    <div class="memo-header">
+      <h1>Constant</h1>
+      <p class="date">2025-04-06 작성</p>
+    </div>
+    <h2>물리</h2>
+    <p>
+      \[
+      \begin{aligned}
+      \frac{k_e e^2}{r^2} &= \frac{m_e v^2}{r} &&\quad \text{(쿨롱 힘이 구심력 역할)} \\[1.8ex]
+      m_e v r &= n\hbar &&\quad \text{(각운동량 양자화 조건)} \\[1.8ex]
+      r_n &= \frac{n^2 \hbar^2}{k_e e^2 m_e} &&\quad \text{(보어 반지름)} \\[1.8ex]
+      E = K + U &= \frac{1}{2} \cdot \frac{k_e e^2}{r} - \frac{k_e e^2}{r} = -\frac{1}{2} \cdot \frac{k_e e^2}{r} \\[1.8ex]
+      E_n &= -\frac{k_e^2 e^4 m_e}{2\hbar^2} \cdot \frac{1}{n^2} &&\quad \text{(총 에너지 식)} \\[1.8ex]
+      E_1 &= -13.6 \, \mathrm{eV} &&\quad \text{(바닥상태 에너지, \(n = 1\))}
+      
+      \end{aligned}
+      \]
+    </p>
+    <p>관련 메모: <a href="#constant">Constant</a></p>
+  </div>
+  <!-- <div class="container" id="memo2">
+    <h1>내 메모 블로그</h1>
+    <p class="date">2025-04-06</p>
+    <p>이 메모에서도 \( E = mc^2 \) 수식 사용</p>
+    <img src="img/stress_strain_curve.png" alt="다이어그램 예시" />
+    <h2>파이썬 코드 예시</h2>
+    <pre><code class="language-python">
+def greet():
+    print("Hello, World!")
+greet()
+    </code></pre>
+    <p>다음은 관련 메모입니다: <a href="#memo1">프로그래밍 코드 예시</a></p>
+  </div> -->
+
+  <script src="script.js"></script>
 </body>
 </html>
