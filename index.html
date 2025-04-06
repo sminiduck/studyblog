@@ -1,1 +1,57 @@
-hello world!
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Pages Blog</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+      color: #333;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>내 메모 블로그</h1>
+    <p>여기에 간단한 메모를 작성합니다. 예를 들어 수학 수식은 이렇게 입력할 수 있습니다: <span id="equation"></span></p>
+    <p>여기에 수학 수식 예시: \( E = mc^2 \)</p>
+    <img src="img/stress_strain_curve.png" alt="그래프 예시">
+  </div>
+  <div class="container">
+    <h1>내 메모 블로그</h1>
+    <p>여기에 간단한 메모를 작성합니다. 예를 들어 수학 수식은 이렇게 입력할 수 있습니다: <span id="equation"></span></p>
+    <p>여기에 수학 수식 예시: \( E = mc^2 \)</p>
+    <img src="img/stress_strain_curve.png" alt="다이어그램 예시">
+  </div>
+  <script>
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, "equation"]);
+  </script>
+</body>
+</html>
