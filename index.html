@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Study Memo</title>
+  <link rel="icon" href="static/favicon.ico" />
+
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
@@ -72,6 +74,145 @@
     <p>관련 메모: <a href="#constant">Constant</a></p>
   </div>
 
+  <div class="container" id="computer-science-abbreviations">
+    <div class="memo-header">
+      <h1>CS약어</h1>
+      <p class="date">2025-04-07 작성됨</p>
+    </div>
+    <dl>
+      <dt><strong>ISA</strong></dt>
+      <dd>Instruction Set Architecture</dd>
+    
+      <dt><strong>CISC</strong></dt>
+      <dd>Complex Instruction Set Computer</dd>
+    
+      <dt><strong>RISC</strong></dt>
+      <dd>Reduced Instruction Set Computer</dd>
+    
+      <dt><strong>SPLD</strong></dt>
+      <dd>Simple Programmable Logic Device</dd>
+    
+      <dt><strong>CPLD</strong></dt>
+      <dd>Complex Programmable Logic Device</dd>
+    
+      <dt><strong>FPGA</strong></dt>
+      <dd>Field-Programmable Gate Array</dd>
+    
+      <dt><strong>HDL</strong></dt>
+      <dd>Hardware Description Language</dd>
+    
+      <dt><strong>IC</strong></dt>
+      <dd>Integrated Circuit</dd>
+    
+      <dt><strong>DIP</strong></dt>
+      <dd>Dual In-line Package</dd>
+    
+      <dt><strong>SSOP</strong></dt>
+      <dd>Shrink Small Outline Package</dd>
+    </dl>
+  </div>
+
+  <div class="container" id="cs-subject-eng-names">
+    <div class="memo-header">
+      <h1>CS과목명</h1>
+      <p class="date">2025-04-07 작성됨</p>
+    </div>
+    <dl>
+      <dt><strong>디지털공학개론</strong></dt>
+      <dd>Introduction to Digital Logic</dd>
+    
+      <dt><strong>컴퓨터구조</strong></dt>
+      <dd>Computer Architecture</dd>
+    
+      <dt><strong>운영체제</strong></dt>
+      <dd>Operating System</dd>
+    
+      <dt><strong>시스템프로그래밍</strong></dt>
+      <dd>System Programming</dd>
+    
+      <dt><strong>자료구조</strong></dt>
+      <dd>Data Structures</dd>
+    
+      <dt><strong>알고리즘</strong></dt>
+      <dd>Algorithms</dd>
+    
+      <dt><strong>데이터베이스</strong></dt>
+      <dd>Database Systems</dd>
+    </dl>
+  </div>
+
+  <div class="container" id="programmable-logic-diagram">
+    <div class="memo-header">
+      <h1>Programmable Logic 분류</h1>
+      <span class="date">2025-04-07 작성</span>
+    </div>
+
+    <!-- Mermaid 다이어그램 영역 -->
+    <div class="mermaid">
+      graph TD  
+        A[Programmable Logic] --> B[PLD]  
+        B --> C[SPLD]  
+        B --> D[CPLD]  
+        A --> E[FPGA]
+    </div>
+    <p>관련 메모: <a href="#computer-science-abbreviations">CS약어</a></p>
+  </div>
+
+  <div class="container" id="cisc-vs-risc">
+    <div class="memo-header">
+      <h1>CISC vs RISC</h1>
+      <span class="date">2025-04-07 작성</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>CISC</th>
+          <th>RISC</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>명령어 형태</td>
+          <td>복잡 · 다양</td>
+          <td>단순 · 적음</td>
+        </tr>
+        <tr>
+          <td>명령어 길이</td>
+          <td>가변</td>
+          <td>고정</td>
+        </tr>
+        <tr>
+          <td>주소 지정 방식</td>
+          <td>다양</td>
+          <td>적음</td>
+        </tr>
+        <tr>
+          <td>프로그램을 이루는<br> 명령어 수</td>
+          <td>적음</td>
+          <td>많음</td>
+        </tr>
+        <tr>
+          <td>필요 클럭 수</td>
+          <td>여러 클럭</td>
+          <td>1클럭 내외</td>
+        </tr>
+        <tr>
+          <td>파이프라이닝 적합성</td>
+          <td>낮음</td>
+          <td>높음</td>
+        </tr>
+        <tr>
+          <td>대표 아키텍처</td>
+          <td>x86</td>
+          <td>ARM</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>관련 메모: <a href="#computer-science-abbreviations">CS약어</a></p>
+  </div>
+  
+
   <div class="container" id="stress-strain-curve">
     <div class="memo-header">
       <h1>Stress Strain Curve</h1>
@@ -102,6 +243,6 @@ greet()
     <p>다음은 관련 메모입니다: <a href="#memo1">프로그래밍 코드 예시</a></p>
   </div> -->
 
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>

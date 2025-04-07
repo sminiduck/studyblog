@@ -4,6 +4,7 @@ html {
 
 body {
   font-family: Arial, sans-serif;
+  font-size: 1.2em;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -42,7 +43,7 @@ h1, h2 {
 
 p {
   font-size: 1.1em;
-  line-height: 1.6em;
+  line-height: 1.4em;
   color: #333;
 }
 
@@ -72,3 +73,38 @@ pre {
 code {
   font-family: "Courier New", Courier, monospace;
 }
+
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+dd {
+  margin-left: 20px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  table-layout: auto;   /* 열 너비를 내용에 따라 자동 조정 */
+  width: auto;          /* 테이블 전체 너비도 내용 기반 */
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  text-align: center;
+}
+
+thead {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
