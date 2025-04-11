@@ -5,21 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Study Memo</title>
   <link rel="icon" href="static/favicon.ico" />
-
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- highlight.js (CDN 또는 직접 다운로드하여 사용 가능) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-
-  <!-- MathJax -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 </head>
 <body>
+<div class="wrapper-memo-grid">
 <div class="memo-grid">
-  <div class="container" id="root">
+
+  <div class="memo" id="root">
     <div class="memo-header">
       <h1>STUDY MEMO</h1>
       <p class="date">2025-04-06 작성</p>
@@ -30,13 +24,13 @@
     </p>
   </div>
   
-  <div class="container" id="constant">
+  <div class="memo" id="constant">
     <div class="memo-header">
       <h1>Constant</h1>
       <p class="date">2025-04-06 작성</p>
     </div>
     <h2>물리</h2>
-    <p>
+    <div>
       \[
       \begin{aligned}
         k_e              &= 8.988 \times 10^9 \; \mathrm{N \cdot m^2 / C^2} \\[1.5ex]
@@ -47,10 +41,10 @@
         1 \, \mathrm{eV} &= 1.602 \times 10^{-19} \, \mathrm{J}
       \end{aligned}
       \]
-    </p>
+    </div>
   </div>
 
-  <div class="container" id="bohr-hydrogen-energy-levels">
+  <div class="memo" id="bohr-hydrogen-energy-levels">
     <div class="memo-header">
       <h1>수소원자 에너지 준위 by 보어 모델</h1>
       <p class="date">2025-04-06 작성</p>
@@ -62,7 +56,7 @@
       각운동량 양자화 조건
       \[m_e v r = n\hbar\\[1.8ex]\]
     </p>
-    <p>
+    <div class="math-scroll">
       \[
       \begin{aligned}
       r_n &= \frac{n^2 \hbar^2}{k_e e^2 m_e}\\[1.8ex]
@@ -71,11 +65,11 @@
       E_1 &= -13.6 \, \mathrm{eV}
       \end{aligned}
       \]
-    </p>
+    </div>
     <p>관련 메모: <a href="#constant">Constant</a></p>
   </div>
 
-  <div class="container" id="computer-science-abbreviations">
+  <div class="memo" id="computer-science-abbreviations">
     <div class="memo-header">
       <h1>CS약어</h1>
       <p class="date">2025-04-07 작성됨</p>
@@ -113,7 +107,7 @@
     </dl>
   </div>
 
-  <div class="container" id="cs-subject-eng-names">
+  <div class="memo" id="cs-subject-eng-names">
     <div class="memo-header">
       <h1>CS과목명</h1>
       <p class="date">2025-04-07 작성됨</p>
@@ -142,7 +136,7 @@
     </dl>
   </div>
 
-  <div class="container" id="programmable-logic-diagram">
+  <div class="memo" id="programmable-logic-diagram">
     <div class="memo-header">
       <h1>Programmable Logic 분류</h1>
       <span class="date">2025-04-07 작성</span>
@@ -159,7 +153,7 @@
     <p>관련 메모: <a href="#computer-science-abbreviations">CS약어</a></p>
   </div>
 
-  <div class="container" id="cisc-vs-risc">
+  <div class="memo" id="cisc-vs-risc">
     <div class="memo-header">
       <h1>CISC vs RISC</h1>
       <span class="date">2025-04-07 작성</span>
@@ -213,8 +207,7 @@
     <p>관련 메모: <a href="#computer-science-abbreviations">CS약어</a></p>
   </div>
   
-
-  <div class="container" id="stress-strain-curve">
+  <div class="memo" id="stress-strain-curve">
     <div class="memo-header">
       <h1>Stress Strain Curve</h1>
       <p class="date">2025-04-06 작성됨</p>
@@ -222,7 +215,7 @@
     <img src="img/stress_strain_curve.png" alt="그래프"/>
   </div>
 
-  <div class="container" id="types-of-unit-cells">
+  <div class="memo" id="types-of-unit-cells">
     <div class="memo-header">
       <h1>Types of Unit Cells</h1>
       <p class="date">2025-04-06 작성됨</p>
@@ -230,7 +223,7 @@
     <img src="img/types_of_unit_cells_4.png" alt="그래프"/>
   </div>
 
-  <!-- <div class="container" id="memo2">
+  <div class="memo" id="memo2">
     <h1>내 메모 블로그</h1>
     <p class="date">2025-04-06</p>
     <p>이 메모에서도 \( E = mc^2 \) 수식 사용</p>
@@ -242,13 +235,12 @@ def greet():
 greet()
     </code></pre>
     <p>다음은 관련 메모입니다: <a href="#memo1">프로그래밍 코드 예시</a></p>
-  </div> -->
+  </div>
 
 </div>
+</div>
 
-  <!-- Masonry.js CDN -->
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
   <script type="module" src="script.js"></script>
 </body>
 </html>

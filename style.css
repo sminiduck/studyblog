@@ -3,27 +3,34 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
-  font-size: 1.2em;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
   background-color: #f4f4f4;
+}
+
+.wrapper-memo-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1360px;
+  margin: 0 auto;
 }
 
 .memo-grid {
   width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 20px;
+  box-sizing: border-box;
 }
 
-.container {
-  width: 500px;               /* Masonry에서 columnWidth와 일치해야 함 */
-  background: white;
+.memo {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
   padding: 16px;
-  margin-bottom: 20px;        /* 카드 간 수직 간격 */
+  margin-bottom: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 
@@ -54,6 +61,32 @@ p {
   line-height: 1.4em;
   color: #333;
 }
+
+.math-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+/* 기본은 스크롤바 감춤 */
+.math-scroll::-webkit-scrollbar {
+  height: 6px;
+  background: transparent;
+}
+.math-scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 3px;
+  transition: background 0.2s ease-in-out;
+}
+
+/* is-scrolling 클래스가 붙었을 때만 보여줌 */
+.math-scroll.is-scrolling::-webkit-scrollbar {
+  background: rgba(0,0,0,0.05);
+}
+.math-scroll.is-scrolling::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.3);
+}
+
 
 img {
   max-width: 100%;
